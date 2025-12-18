@@ -27,11 +27,11 @@ These values reflect qualitative fits intended to balance understanding/inferenc
 
 | Param   | Tactful | Candid |
 |---------|---------|--------|
-| `uc`    | 5       | 3      |
-| `urc`   | 2       | 7      |
+| `uc`    | 5.22    | 3.69   |
+| `urc`   | 2.75    | 6.66   |
 | `tc`    | -5.08   | -2.7   |
-| `tca`   | 2       | -0.2   |
-| `sc`    | 30      | 0.01   |
+| `tca`   | -2      | -1.98  |
+| `sc`    | 15      | 0.01   |
 | `scc`   | 0.09    | 0.01   |
 | `alpha` | 0.7     | 0.5    |
 | `alphac`| 0.3     | 0.5    |
