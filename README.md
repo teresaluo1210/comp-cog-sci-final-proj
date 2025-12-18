@@ -12,7 +12,7 @@ mkdir -p figs
 Saves: `figs/bar-modelonly-kind-tactful.pdf`
 
 ```zsh
-$PWD/.venv/bin/python -c 'import utils; params={"uc":5.22,"urc":2.75,"tc":-5.08,"tca":-2,"sc":15,"scc":0.09,"alpha":0.7,"alphac":0.3}; utils.main_model_only(params, kind=True, output_dir="figs", file_tag="tactful")'
+$PWD/.venv/bin/python -c 'import utils; params={"uc":5.22,"urc":2.75,"tc":-5.08,"tca":-2,"sc":30,"scc":0.09,"alpha":0.7,"alphac":0.3}; utils.main_model_only(params, kind=True, output_dir="figs", file_tag="tactful")'
 ```
 
 ## Run: Candid (model-only)
@@ -31,7 +31,7 @@ These values reflect qualitative fits intended to balance understanding/inferenc
 | `urc`   | 2.75    | 6.66   |
 | `tc`    | -5.08   | -2.7   |
 | `tca`   | -2      | -1.98  |
-| `sc`    | 15      | 0.01   |
+| `sc`    | 30      | 0.01   |
 | `scc`   | 0.09    | 0.01   |
 | `alpha` | 0.7     | 0.5    |
 | `alphac`| 0.3     | 0.5    |
