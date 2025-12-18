@@ -134,11 +134,9 @@ def teacher[f: F, r: R, h: H, t: T, d: D, u: U, s: S](
     teacher: chooses(u in U, wpp = is_true(t, d, u) * exp(0
           + uc * student_understanding[f, h, u](tc, tca, p_both, p_either)
           + urc * student_inference[f, h, u, s, t, d](tc, tca, p_both, p_either)
-          - ((scc if r == 0 else sc) + 
-                ((alphac if r == 0 else alpha))) * affect_self_efficacy[f, r, h, u, s](tc, tca, p_both, p_either)
-            - ((scc if r == 0 else sc) + (1 - (alphac if r == 0 else alpha))) * affect_shame[f, r, h, u, s](tc, tca, p_both, p_either)
-            
+          - (scc if r == 0 else sc) * (
+                ((alphac if r == 0 else alpha)) * affect_self_efficacy[f, r, h, u, s](tc, tca, p_both, p_either)
+              + (1 - (alphac if r == 0 else alpha)) * affect_shame[f, r, h, u, s](tc, tca, p_both, p_either)
+            )
     ))
     return Pr[teacher.u == u]
-
-
